@@ -1,2 +1,0 @@
-git add test.txt
-git commit -m 'dodanie nowego pliku test'
