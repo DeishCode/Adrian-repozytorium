@@ -1,0 +1,9 @@
+
+def print_even_numbers(list):
+    for num in list:
+        if num % 2 == 0:
+            print(num)
+
+
+list_of_nums = list(range(1, 11))
+print_even_numbers(list_of_nums)
