@@ -1,4 +1,3 @@
-
 def print_even_numbers(list):
     print(list)
     print(list[::2])

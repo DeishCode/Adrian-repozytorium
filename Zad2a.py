@@ -1,4 +1,4 @@
-def collect_names(num_of_names = 5):
+def collect_names(num_of_names=5):
     names_list = []
 
     for i in range(num_of_names):
@@ -6,5 +6,6 @@ def collect_names(num_of_names = 5):
         names_list.append(name)
 
     return print(names_list)
+
 
 names = collect_names()

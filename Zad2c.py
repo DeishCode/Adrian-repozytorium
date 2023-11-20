@@ -1,4 +1,3 @@
-
 def print_even_numbers(list):
     for num in list:
         if num % 2 == 0:
