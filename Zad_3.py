@@ -1,5 +1,3 @@
-
-
 class Property:
     def __init__(self, area, rooms, price, address):
         self.area = area
@@ -8,7 +6,11 @@ class Property:
         self.address = address
 
     def __str__(self):
-        return f"Property:\nArea: {self.area} m2\nRooms: {self.rooms}\nPrice: {self.price} zł\nAddress: {self.address}"
+        return (
+            f"Property:\nArea: {self.area} m2\n"
+            f"Rooms: {self.rooms}\nPrice: {self.price} zł\n"
+            f"Address: {self.address}"
+        )
 
 
 class House(Property):
@@ -17,7 +19,10 @@ class House(Property):
         self.plot = plot
 
     def __str__(self):
-        return f"{super().__str__()}\nHouse details:\nPlot size: {self.plot} m2"
+        return (
+            f"{super().__str__()}\n"
+            f"House details:\nPlot size: {self.plot} m2"
+        )
 
 
 class Flat(Property):
@@ -26,14 +31,27 @@ class Flat(Property):
         self.floor = floor
 
     def __str__(self):
-        return f"{super().__str__()}\nFlat details:\nFloor: {self.floor}"
+        return (
+            f"{super().__str__()}\n"
+            f"Flat details:\nFloor: {self.floor}"
+        )
 
 
-house1 = House(area = 150, rooms = 5, price = 250000, address = "Katowice, 12-567, Słoczena 12", plot = 500)
-flat1 = Flat(area = 80, rooms = 3, price = 120000, address = "Mariacka, 12-567, 50", floor = 2)
-
+house1 = House(
+    area=150,
+    rooms=5,
+    price=250000,
+    address="Katowice, 12-567, Słoczena 12",
+    plot=500
+)
+flat1 = Flat(
+    area=80,
+    rooms=3,
+    price=120000,
+    address="Mariacka, 12-567, 50",
+    floor=2
+)
 
 print(house1, "\n")
 print("-" * 50)
 print(flat1, "\n")
-
