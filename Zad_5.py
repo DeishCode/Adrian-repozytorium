@@ -1,5 +1,3 @@
-
-
 def value_in_list(list, value):
     return value in list
 
